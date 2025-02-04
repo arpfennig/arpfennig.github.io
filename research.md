@@ -3,7 +3,7 @@ layout: page
 title: Research
 ---
 
-My research focuses on understanding the evolutionary dynamics and implications of admixture and introgression, that is, the mixing of populations that have been separated for relative short and long evolutionary time, respectively. Given their central role to human evolution, I am interested how they have shaped present-day genetic variation and disease risk. To do so, I am integrating population genetics and comparative genomics with bioinformatics tool development. My current research areas include:
+My research focuses on understanding the evolutionary dynamics and implications of admixture and introgression, that is, the mixing of populations that have been separated for relatively short and long evolutionary time, respectively. Given their central role in human evolution, I am interested in how they have shaped present-day genetic variation and disease risk. To do so, I am integrating population genetics and comparative genomics with bioinformatics tool development. My current research areas include:
 
 **1) Improving de novo genome assembly by integrating methylation information and variant correlations**
 
@@ -15,10 +15,12 @@ Current de novo genome assemblers, like verkko and hifiasm, rely on multiple exp
 
 **2) Developing a tool suite for population and statistical genetics analyses on pangenomes**
 
-Pangenomes are a set of multiple whole-genome sequences typically represented as a graph (Figure 2). Unlike a single reference genome, pangenomes capture the full spectrum of genetic variation by being able to represent multiple mutations at the same position and accommodate substantial amounts of non-reference sequence. These capabilities are particularly critical for studying biomedically important and highly diverse and structurally complex “genomic black holes” that are now accurately reconstructed in de novo genome assemblies. However, due to an absence of analytical tools to analyze pangenomes, current approaches map genetic variation in pangenomes back to the coordinate system of a single reference genome and analyze it with conventional methods, which largely defeats the advantages of de novo assembly. Thus, the absence of analytical tools for pangenomes prevents us from taking advantage of the full spectrum of genetic variation (in particular, structurally complex variation) in population and statistical genetics analyses. To address this, I am currently developing a tool suite to support standard population and statistical genetics analyses (e.g., elucidating population structure, association testing, etc.) on pangenomes.
+Pangenomes are a set of multiple whole-genome sequences typically represented as a graph (Figure 2). Unlike a single reference genome, pangenomes capture the full spectrum of genetic variation by being able to represent multiple mutations at the same position and accommodate substantial amounts of non-reference sequence. These capabilities are particularly critical for studying biomedically important highly diverse and structurally complex “genomic black holes” that are now accurately reconstructed in de novo genome assemblies. However, due to an absence of analytical tools to analyze pangenomes, current approaches map genetic variation in pangenomes back to the coordinate system of a single reference genome and analyze it with conventional methods, which largely defeats the advantages of de novo assembly. Thus, the absence of analytical tools for pangenomes prevents us from taking advantage of the full spectrum of genetic variation (in particular, structurally complex variation) in population and statistical genetics analyses. To address this, I am currently developing a tool suite to support standard population and statistical genetics analyses (e.g., elucidating population structure, association testing, etc.) on pangenomes.
 
-| ![Figure 2](assets/img/pangenome.png). |
+| ![Figure 2](assets/img/pangenomes.jpg). |
 |:--:| 
 | **Figure 2.** An illustration of the advantages of a pangenome graph over a single linear reference genome (Source, [NHGRI](https://www.genome.gov/sites/default/files/inline-images/Pangenome-tube-map.jpg)).
 
  |
+
+ **3) The evolutionary fate of Neanderthal introgressed sequence in modern human genomes**
