@@ -18,9 +18,9 @@ Rohini Janivara, Ujani Hazra, **Aaron Pfennig** (author 3 out of 22), …, and J
 
 ### 2022
 
-Carl J Dyson*, **Aaron Pfennig***, Daniel Ariano-Sánchez, Joseph Lachance, Joseph R Mendelson III, Michael A D Goodisman, Genome of the endangered Guatemalan Beaded Lizard, Heloderma charlesbogerti, reveals evolutionary relationships of squamates and declines in effective population sizes, _G3 Genes|Genomes|Genetics_, 2022, [https://doi.org/10.1093/g3journal/jkac276](https://doi.org/10.1093/g3journal/jkac276)
+Carl J Dyson*, **Aaron Pfennig***, Daniel Ariano-Sánchez, Joseph Lachance, Joseph R Mendelson III, Michael A D Goodisman, Genome of the endangered Guatemalan Beaded Lizard, Heloderma charlesbogerti, reveals evolutionary relationships of squamates and declines in effective population sizes, _G3 Genes\|Genomes\|Genetics_, 2022, [https://doi.org/10.1093/g3journal/jkac276](https://doi.org/10.1093/g3journal/jkac276)
 
-**Aaron Pfennig** and Joseph Lachance, Hybrid fitness effects modify fixation probabilities of introgressed alleles, _G3 Genes|Genomes|Genetics_, 2022, [https://doi.org/10.1093/g3journal/jkac113](https://doi.org/10.1093/g3journal/jkac113)
+**Aaron Pfennig** and Joseph Lachance, Hybrid fitness effects modify fixation probabilities of introgressed alleles, _G3 Genes\|Genomes\|Genetics_, 2022, [https://doi.org/10.1093/g3journal/jkac113](https://doi.org/10.1093/g3journal/jkac113)
 
 Burcu F. Darst, Raymond Hughley, **Aaron Pfennig** (author 3 out of 101), …, and Christopher A. Haiman, A Rare Germline HOXB13 Variant Contributes to Risk of Prostate Cancer in Men of African Ancestry, _Eur Urol_, 2022, [https://doi.org/10.1016/j.eururo.2021.12.023](https://doi.org/10.1016/j.eururo.2021.12.023)
 
