@@ -20,7 +20,7 @@ author: Aaron Pfennig, Ph.D.
 ###############################################
 
 navbar-links:
-  Home: "aboutme"
+  About me: "aboutme"
   CV: "/assests/pdf/CV.pdf
   Publications: publications
 
