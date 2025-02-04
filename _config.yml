@@ -21,8 +21,9 @@ author: Aaron Pfennig, PhD
 
 navbar-links:
   About Me: "aboutme"
-  Research:
-  Publications: 
+  CV: "/assests/pdf/CV.pdf
+  Research: research
+  Publications: publications
 
 ################
 # --- Logo --- #
