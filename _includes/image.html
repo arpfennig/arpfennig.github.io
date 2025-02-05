@@ -1,4 +1,4 @@
-<div style="float: right; margin-left: 15px; max-width: 400px; text-align: center;">
+<div style="float: {{ include.align }}; margin-left: 15px; max-width: {{ include.max-width }}; text-align: center;">
     <figure style="margin: 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #ffffff;">
         <img src="{{ include.file }}" style="width: 100%;" alt="{{ include.alt }}"/>
         {% if include.credit %}
