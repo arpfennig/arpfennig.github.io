@@ -7,20 +7,8 @@ My research focuses on understanding the evolutionary dynamics and implications 
 
 ### Improving de novo genome assembly by integrating methylation information and variant correlations
 
-{% include image.html
-    src="assets/img/hifihap.png" <!-- image filename (placed in /assets/images) -->
-    alt="Figure 1" <!-- alt text -->
-    description="This is Jekyll's logo, featuring Dr. Jekyll's serum!" <!-- Caption -->
-%}
+{% include image src="assets/img/hifihap.png" width="500px" align="right" description="Figure 1." %} Current de novo genome assemblers, like verkko and hifiasm, rely on multiple expensive sequencing experiments, such as parental short-read sequencing or chromosomal contact sequencing, in addition to high-fidelity long-read sequencing (e.g., PacBio Revio sequencing) to generate fully phased genomes. These requirements prohibit the routine de novo assembly of phased genomes at population scale due to the inability to recruit parents for all samples, large amounts of DNA required for each sample, and financial constraints.  I am working to improve the phasing in assemblies generated from just high-fidelity long-read data by integrating methylation information and variant correlations from a reference panel. To this end, I have developed a novel read-based phasing algorithm - HiFiHap - specifically for high-fidelity long reads that integrates read methylation information and variant correlations in a reference panel (such as the 1000 Genomes Project) with information from overlapping heterozygous variants between long reads. HiFiHap demonstrates that using methylation information and variant correlations in reference panels significantly improves long-range phasing, achieving a lower error rate and longer contiguously phased blocks (phase block N50) than existing read-based phasing methods (Figure 1).
 
-<p><img src="assets/img/hifihap.png"
-    width="500" 
-    alt="Figure 1" align="right">
-</p>
-<p>
-  <em>**Figure 1.** Benchmarking of HiFiHap and state-of-the-art read-based phasing tools (i.e., HaploMaker, Whatshap, HapCUT2, and WhatsHap + MethPhaser) using PacBio Revio HiFi 40x data for HG002 from the HPRC and the HG002 T2T Q100 ground truth call set for small variants. For HiFiHap, 1000 Genomes Project phase 3 data was additionally used for population-based phasing. For each tool, we assessed the switch error rate (A) and phase block N50 (B) using WhatsHap. Note that HaploMaker does not provide phase block information. Each dot represents a chromosome.</em>
-</p>
-Current de novo genome assemblers, like verkko and hifiasm, rely on multiple expensive sequencing experiments, such as parental short-read sequencing or chromosomal contact sequencing, in addition to high-fidelity long-read sequencing (e.g., PacBio Revio sequencing) to generate fully phased genomes. These requirements prohibit the routine de novo assembly of phased genomes at population scale due to the inability to recruit parents for all samples, large amounts of DNA required for each sample, and financial constraints.  I am working to improve the phasing in assemblies generated from just high-fidelity long-read data by integrating methylation information and variant correlations from a reference panel. To this end, I have developed a novel read-based phasing algorithm - HiFiHap - specifically for high-fidelity long reads that integrates read methylation information and variant correlations in a reference panel (such as the 1000 Genomes Project) with information from overlapping heterozygous variants between long reads. HiFiHap demonstrates that using methylation information and variant correlations in reference panels significantly improves long-range phasing, achieving a lower error rate and longer contiguously phased blocks (phase block N50) than existing read-based phasing methods (Figure 1). 
 
 | ![Figure 1](assets/img/hifihap.png). |
 |:--:| 
