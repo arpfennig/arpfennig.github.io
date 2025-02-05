@@ -1,9 +1,5 @@
 <figure>
-  <img
-    src="{{ include.src }}"
-     alt="{{ include.alt }}"
-     class="img-responsive"
-     style="{{ include.style }}"
-    >
-  <figcaption>{{ include.caption }}</figcaption>
+   <img src="{{ include.file }}" style="max-width: {{ include.max-width }};"
+      alt="{{ include.alt }}"/>
+   <figcaption>{{ include.caption }}</figcaption>
 </figure>
