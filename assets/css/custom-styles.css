@@ -1,5 +1,14 @@
-.img-left {
-  float: left;
-  margin-right: 1em;
-  width: 25%;
+.figure {
+  float: right;
+  width: 20%;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
+img.scaled {
+  width: 100%;
 }
