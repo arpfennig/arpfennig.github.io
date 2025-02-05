@@ -1,6 +1,12 @@
 <div style="float: right; margin-left: 15px; max-width: 400px; text-align: center;">
     <figure style="margin: 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #ffffff;">
         <img src="{{ include.file }}" style="width: 100%;" alt="{{ include.alt }}"/>
+        {% if include.credit %}
+        <div style="position: absolute; bottom: 5px; right: 5px; background: rgba(255, 255, 255, 0.7); 
+                    padding: 2px 5px; font-size: 12px; color: #555; border-radius: 3px;">
+            {{ include.credit }}
+        </div>
+        {% endif %}
         <figcaption style="display: block; text-align: justify; font-size: 12px; color: gray;">
             {{ include.caption }}
         </figcaption>
