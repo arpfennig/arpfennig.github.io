@@ -24,6 +24,7 @@ navbar-links:
   CV: "/assets/pdf/PfennigCV.pdf"
   Research: "research"
   Publications: "publications"
+  Software: "software"
 
 ################
 # --- Logo --- #
