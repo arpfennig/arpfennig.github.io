@@ -7,13 +7,8 @@ My research focuses on understanding the evolutionary dynamics and implications 
 
 ### Improving de novo genome assembly by integrating methylation information and variant correlations
 
-{% include image.html src="assets/img/hifihap.png" alt="Logo"
-   caption="My caption here"
-   style="float: right; width: 20%"
-%}
-
 <div class=figure>
-  <p><img class=scaled src="assets/img/hifihap.png
+  <p><img class=scaled src="assets/img/hifihap.png"
     alt="St. Tropez">
   <p>Saint Tropez and its
     fort in the evening sun
