@@ -1,14 +1,15 @@
-.figure {
-  float: right;
-  width: 20%;
-  border: thin silver solid;
-  margin: 0.5em;
-  padding: 0.5em;
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-  text-indent: 0;
+.page img {
+  max-width: 100%;
 }
-img.scaled {
-  width: 100%;
+
+.research .caption {
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 0.625rem;
+  font-style: italic;
+  color: #777;
+  margin: 0;
+  display: block;
+  border-bottom-right-radius: 0.3125rem;
+  border-bottom-left-radius: 0.3125rem;
 }
