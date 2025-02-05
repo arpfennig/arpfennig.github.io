@@ -7,7 +7,11 @@ My research focuses on understanding the evolutionary dynamics and implications 
 
 ### Improving de novo genome assembly by integrating methylation information and variant correlations
 
-
+{% include image.html
+    src="assets/img/hifihap.png" <!-- image filename (placed in /assets/images) -->
+    alt="Figure 1" <!-- alt text -->
+    description="This is Jekyll's logo, featuring Dr. Jekyll's serum!" <!-- Caption -->
+%}
 
 <p><img src="assets/img/hifihap.png"
     width="500" 
