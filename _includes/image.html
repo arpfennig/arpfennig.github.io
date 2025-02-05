@@ -1,9 +1,9 @@
-<div style="clear: both;">
-  <div style="float: left; margin-right 1em;">
-    <img src="{{ include.image_path }}" alt="">
-  </div>
-  <div>
-    <h2>{{ include.title }}</h2>
-    {{ include.description | markdownify }}
-  </div>
-</div>
+<figure>
+  <img
+    src="{{ include.src }}"
+     alt="{{ include.alt }}"
+     class="img-responsive"
+     style="{{ include.style }}"
+    >
+  <figcaption>{{ include.caption }}</figcaption>
+</figure>
