@@ -1,8 +1,8 @@
 .page img {
-  max-width: 100%;
+  max-width: 25%;
 }
 
-.research .caption {
+.page .caption {
   text-align: center;
   font-size: 0.875rem;
   padding: 0.625rem;
