@@ -51,7 +51,7 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "aaronpfennig@gmail.com"
-  github: AaronRuben
+  github: arpfennig
   twitter: AaronPfennig
   google-scholar: YLgAAAAJ
   ORCID: 0000-0002-0114-1812
@@ -97,7 +97,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "aaronpfennig.github.io"
+url-pretty: "arpfennig.github.io"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
