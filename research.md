@@ -3,19 +3,15 @@ layout: page
 title: Research
 ---
 
-My research focuses on understanding the evolutionary dynamics and implications of admixture and introgression, that is, the mixing of populations that have been separated for relatively short and long evolutionary time, respectively. Given their central role in human evolution, I am interested in how they have shaped present-day genetic variation and disease risk. To do so, I am integrating population genetics and comparative genomics with bioinformatics tool development. My current research areas include:
+My research focuses on understanding the evolutionary dynamics and implications of admixture and introgression, that is, the mixing of populations that have been separated for relatively short and long evolutionary time, respectively. Given their central role in human evolution, I am interested in how they have shaped present-day genetic variation and disease risk, with a focus on structural variation. To do so, I am integrating population genetics and comparative genomics with bioinformatics tool development. My current research areas include:
 
-### Improving de novo genome assembly by integrating methylation information and variant correlations
+### Leveraging Methylation Information in Long-Read Sequencing Data TO Improve Variant Phasing
 
-Current de novo genome assemblers, like Verkko and HiFiasm, rely on multiple expensive sequencing experiments, such as parental short-read sequencing or chromosomal contact sequencing, in addition to high-fidelity long-read sequencing (e.g., PacBio Revio sequencing) to generate fully phased genomes. These requirements prohibit the routine de novo assembly of phased genomes at population scale due to the inability to recruit parents for all samples, large amounts of DNA required for each sample, and financial constraints.
+Accurate phasing of genetic and epigenetic variation is crucial for many downstream analyses, including association testing, clinical variant interpretation, and population history inference. Although long-read sequencing significantly improves the continuity and completeness of genome sequencing, reconstructing chromosome-scale haplotypes still often requires combining multiple technologies, such as PacBio HiFi and Oxford Nanopore Technologies (ONT) sequencing. While these sequencing platforms detect the epigenetic modification 5-methylcytosine (5mC), current read-based phasing and *de novo* genome assembly algorithms do not incorporate this information. To assess whether methylation information can improve long-range phasing, I developed LongHap, a read-based phasing method that seamlessly integrates sequence and methylation data. LongHap outperforms existing tools by achieving lower error rates and greater phase block contiguity (Figure 1).
 
-{% include image.html file="/assets/img/hifihap.png" align="right" margin-left="15px" margin-right="0px" max-width="400px" alt="Figure 1" caption="<strong>Figure 1</strong>. Benchmarking of HiFiHap and state-of-the-art read-based phasing tools (i.e., HaploMaker, Whatshap, HapCUT2, and WhatsHap + MethPhaser) using PacBio Revio HiFi 40x data for HG002 from the HPRC and the HG002 T2T Q100 ground truth call set for small variants. For HiFiHap, 1000 Genomes Project phase 3 data was additionally used for population-based phasing. For each tool, we assessed the switch error rate <strong>(A)</strong> and phase block N50 <strong>(B)</strong> using WhatsHap. Each dot represents a chromosome." %}
+{% include image.html file="/assets/img/longhap.png" align="right" margin-left="15px" margin-right="0px" max-width="400px" alt="Figure 1" caption="<strong>Figure 1</strong>. Benchmarking of LongHap and state-of-the-art read-based phasing tools (i.e., Whatshap, HapCUT2, Longphase, and WhatsHap + MethPhaser) using PacBio Revio HiFi 40x data for HG002 from the HPRC and the HG002 T2T Q100 ground truth call set for small variants. For each tool, we assessed the switch error rate <strong>(A)</strong> and phase block N50 <strong>(B)</strong> using WhatsHap. Each dot represents a chromosome." %}
 
-I am working to improve the phasing in assemblies generated from just high-fidelity long-read data by integrating methylation information and variant correlations from a reference panel. To this end, I have developed a novel read-based phasing algorithm— HiFiHap - specifically for high-fidelity long reads that integrates read methylation information and variant correlations in a reference panel (such as the 1000 Genomes Project) with information from overlapping heterozygous variants between long reads. 
-
-HiFiHap demonstrates that using methylation information and variant correlations in reference panels significantly improves long-range phasing, achieving a lower error rate and longer contiguously phased blocks (phase block N50) than existing read-based phasing methods (Figure 1).
-
-
+To extend these performance gains to phased *de novo* genome assemblies, I am now working to incorporate LongHap's methylation-aware phasing module into an assembly polishing pipeline, improving haplotype accuracy in partially phased *de novo* genome assemblies generated from either PacBio HiFi or ONT sequencing data and reducing the need for multiple costly sequencing experiments that require large amounts of DNA. 
 
 ### Developing a tool suite for population and statistical genetics analyses on pangenomes
 
@@ -27,6 +23,11 @@ However, due to an absence of analytical tools to analyze pangenomes, current ap
 
 To address this, I am currently developing a tool suite to support standard population and statistical genetics analyses (e.g., elucidating population structure, association testing, etc.) on pangenomes.
 
+### New population genetics frameworks for analyzing structural variation
+
+A major gap in human genetics is our inability to study structural variants (SVs), such as deletions and duplications ≥50 base pairs, that can disrupt protein-coding genes and regulatory elements, as they are invisible to short-read sequencing. This gap limits our understanding of disease and genome evolution. Long-read sequencing now enables the discovery of SVs through de novo assembly. However, SVs arise through complex mutational processes that defy basic population genetics assumptions, such as constant mutation rates, and we therefore lack foundational models to analyze this important variant class.
+
+I am developing theoretical and analytical frameworks to make direct inferences about SVs by modeling their unique mutational mechanisms. For example, copy number variants can be modeled as chromosomes switching between “states” by gaining or losing copies. Two chromosomes can only share a common ancestor when they are in the same state (copy number). Such models inform realistic simulations to train machine learning models for making evolutionary and clinical inferences about SVs. By developing novel methods for assembling high-quality phased genomes and analyzing SVs, my research will delineate the functional impact of SVs.
 
 ### Theoretical and empirical population genetics of admixture and introgression
 
