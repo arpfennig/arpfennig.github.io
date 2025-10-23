@@ -5,7 +5,7 @@ title: Research
 
 My research focuses on understanding the evolutionary dynamics and implications of admixture and introgression, that is, the mixing of populations that have been separated for relatively short and long evolutionary time, respectively. Given their central role in human evolution, I am interested in how they have shaped present-day genetic variation and disease risk, with a focus on structural variation. To do so, I am integrating population genetics and comparative genomics with bioinformatics tool development. My current research areas include:
 
-### Leveraging Methylation Information in Long-Read Sequencing Data TO Improve Variant Phasing
+### Leveraging Methylation Information in Long-Read Sequencing Data To Improve Variant Phasing
 
 Accurate phasing of genetic and epigenetic variation is crucial for many downstream analyses, including association testing, clinical variant interpretation, and population history inference. Although long-read sequencing significantly improves the continuity and completeness of genome sequencing, reconstructing chromosome-scale haplotypes still often requires combining multiple technologies, such as PacBio HiFi and Oxford Nanopore Technologies (ONT) sequencing. While these sequencing platforms detect the epigenetic modification 5-methylcytosine (5mC), current read-based phasing and *de novo* genome assembly algorithms do not incorporate this information. To assess whether methylation information can improve long-range phasing, I developed LongHap, a read-based phasing method that seamlessly integrates sequence and methylation data. LongHap outperforms existing tools by achieving lower error rates and greater phase block contiguity (Figure 1).
 
