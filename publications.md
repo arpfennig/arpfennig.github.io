@@ -7,7 +7,7 @@ title: Publications
 †These authors are co-corresponding authors
 
 ### 2025
-Rohini Janivara, Ujani Hazra, **Aaron Pfennig** (author 3 out of 22), …, and Joseph Lachance; Uncovering the genetic architecture and evolutionary roots of androgenetic alopecia in African men, _Human Genetics and Genomics Advances_, 2025, [https://doi.org/10.1016/j.xhgg.2025.100428](https://doi.org/10.1016/j.xhgg.2025.100428)
+Rohini Janivara, Ujani Hazra, **Aaron Pfennig** (author 3 out of 22), …, and Joseph Lachance, Uncovering the genetic architecture and evolutionary roots of androgenetic alopecia in African men, _Human Genetics and Genomics Advances_, 2025, [https://doi.org/10.1016/j.xhgg.2025.100428](https://doi.org/10.1016/j.xhgg.2025.100428)
 
 ### 2024
 **Aaron Pfennig**† and Joesph Lachance†, The evolutionary fate of Neanderthal DNA in 30,780 admixed genomes with recent African-like ancestry, *bioRxiv*, 2024, [https://doi.org/10.1101/2024.07.25.605203](https://doi.org/10.1101/2024.07.25.605203)
