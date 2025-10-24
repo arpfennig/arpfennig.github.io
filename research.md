@@ -40,6 +40,9 @@ I empirically tested this hypothesis using 30,780 predominantly African- and Eur
 Furthermore, in related work, I proposed methods for including uncertainty in the interpretation of sex-biased admixture in the Americas in the context of the transatlantic slave trade. I collaborated on studies elucidating the genetic basis of prostate cancer and male pattern baldness in African men.
 
 Relevant work:
+
+†These authors are co-corresponding authors
+
 * **Aaron Pfennig**† and Joesph Lachance†, The evolutionary fate of Neanderthal DNA in 30,780 admixed genomes with recent African-like ancestry, bioRxiv, 2024, [https://doi.org/10.1101/2024.07.25.605203](https://doi.org/10.1101/2024.07.25.605203)
 * **Aaron Pfennig** and Joseph Lachance, Hybrid fitness effects modify fixation probabilities of introgressed alleles, _G3 Genes\|Genomes\|Genetics_, 2022, [https://doi.org/10.1093/g3journal/jkac113](https://doi.org/10.1093/g3journal/jkac113)
 * **Aaron Pfennig** and Joseph Lachance, Challenges of accurately estimating sex-biased admixture from X chromosomal and autosomal ancestry proportions, _The American Journal of Human Genetics_, 2023, [https://doi.org/10.1016/j.ajhg.2022.12.012](https://doi.org/10.1016/J.AJHG.2022.12.012)
