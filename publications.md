@@ -8,6 +8,8 @@ title: Publications
 
 ### 2026
 
+Kwondo Kim, **Aaron Pfennig** (author 2 out of 12), …, and Charles Lee, A Denisovan-derived Alu insertion in OCA2 contributes to pigmentation diversity in present-day Melanesian, 2026, _bioRxiv_, [https://doi.org/10.64898/2026.03.18.712481](https://doi.org/10.64898/2026.03.18.712481)
+
 **Aaron Pfennig** and Joshua M. Akey, Harnessing methylation signals inherent in long-read sequencing data for improved variant phasing, _bioRxiv_, [https://doi.org/10.64898/2026.03.11.710820](https://doi.org/10.64898/2026.03.11.710820)
 
 ### 2025
