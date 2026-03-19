@@ -33,6 +33,10 @@ A major gap in human genetics is our inability to study structural variants (SVs
 
 I am developing theoretical and analytical frameworks to make direct inferences about SVs by modeling their unique mutational mechanisms. For example, copy number variants can be modeled as chromosomes switching between “states” by gaining or losing copies. Two chromosomes can only share a common ancestor when they are in the same state (copy number). Such models inform realistic simulations to train machine learning models for making evolutionary and clinical inferences about SVs. By developing novel methods for assembling high-quality phased genomes and analyzing SVs, my research will delineate the functional impact of SVs.
 
+Relevant work:
+
+* Kwondo Kim, **Aaron Pfennig** (author 2 out of 12), …, and Charles Lee, A Denisovan-derived Alu insertion in OCA2 contributes to pigmentation diversity in present-day Melanesian, 2026, _bioRxiv_, [https://doi.org/10.64898/2026.03.18.712481](https://doi.org/10.64898/2026.03.18.712481)
+
 ### Theoretical and empirical population genetics of admixture and introgression
 
 Admixture and introgression play a central role in human evolution. Therefore, it is critical to understand how these processes have shaped the distribution of present-day genetic variation and what its implications are. I introduced a novel population genetics model that accounts for a heterogeneous genetic background in hybrid genomes, showing that fitness effects arising from a heterogeneous background modify the dynamics of focal alleles during introgression. The model predicts that most introgressed alleles must survive an initial filter, suggesting Neanderthal-introgressed variants in extant human genomes cannot be that harmful. 
@@ -47,6 +51,7 @@ Relevant work:
 
 †These authors are co-corresponding authors
 
+* Kwondo Kim, **Aaron Pfennig** (author 2 out of 12), …, and Charles Lee, A Denisovan-derived Alu insertion in OCA2 contributes to pigmentation diversity in present-day Melanesian, 2026, _bioRxiv_, [https://doi.org/10.64898/2026.03.18.712481](https://doi.org/10.64898/2026.03.18.712481)
 * **Aaron Pfennig**† and Joesph Lachance†, The evolutionary fate of Neanderthal DNA in 30,780 admixed genomes with recent African-like ancestry, _bioRxiv_, 2024, [https://doi.org/10.1101/2024.07.25.605203](https://doi.org/10.1101/2024.07.25.605203) (_under review at MBE_)
 * **Aaron Pfennig** and Joseph Lachance, Hybrid fitness effects modify fixation probabilities of introgressed alleles, _G3 Genes\|Genomes\|Genetics_, 2022, [https://doi.org/10.1093/g3journal/jkac113](https://doi.org/10.1093/g3journal/jkac113)
 * **Aaron Pfennig** and Joseph Lachance, Challenges of accurately estimating sex-biased admixture from X chromosomal and autosomal ancestry proportions, _The American Journal of Human Genetics_, 2023, [https://doi.org/10.1016/j.ajhg.2022.12.012](https://doi.org/10.1016/J.AJHG.2022.12.012)
