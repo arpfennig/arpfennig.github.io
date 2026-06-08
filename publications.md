@@ -8,15 +8,14 @@ title: Publications
 
 ### 2026
 
+**Aaron Pfennig**† and Joesph Lachance†, Limited selection on Neanderthal DNA in 30,780 recently admixed genomes with African-like ancestry, *MBE*, 2026, [https://doi.org/10.1093/molbev/msag136](https://doi.org/10.1093/molbev/msag136)
+
 Kwondo Kim, **Aaron Pfennig** (author 2 out of 12), …, and Charles Lee, A Denisovan-derived Alu insertion in OCA2 contributes to pigmentation diversity in present-day Melanesian, 2026, _bioRxiv_, [https://doi.org/10.64898/2026.03.18.712481](https://doi.org/10.64898/2026.03.18.712481)
 
 **Aaron Pfennig** and Joshua M. Akey, Methylation-aware long-read phasing significantly improves genome-wide haplotype reconstruction, _bioRxiv_, [https://doi.org/10.64898/2026.03.11.710820](https://doi.org/10.64898/2026.03.11.710820)
 
 ### 2025
 Rohini Janivara, Ujani Hazra, **Aaron Pfennig** (author 3 out of 22), …, and Joseph Lachance, Uncovering the genetic architecture and evolutionary roots of androgenetic alopecia in African men, _Human Genetics and Genomics Advances_, 2025, [https://doi.org/10.1016/j.xhgg.2025.100428](https://doi.org/10.1016/j.xhgg.2025.100428)
-
-### 2024
-**Aaron Pfennig**† and Joesph Lachance†, The evolutionary fate of Neanderthal DNA in 30,780 admixed genomes with recent African-like ancestry, *bioRxiv*, 2024, [https://doi.org/10.1101/2024.07.25.605203](https://doi.org/10.1101/2024.07.25.605203)
 
 ### 2023
 
