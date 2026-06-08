@@ -8,7 +8,7 @@ title: Publications
 
 ### 2026
 
-**Aaron Pfennig**† and Joesph Lachance†, Limited selection on Neanderthal DNA in 30,780 recently admixed genomes with African-like ancestry, *MBE*, 2026, [https://doi.org/10.1093/molbev/msag136](https://doi.org/10.1093/molbev/msag136)
+**Aaron Pfennig**† and Joesph Lachance†, Limited selection on Neanderthal DNA in 30,780 recently admixed genomes with African-like ancestry, *Molecular Biology and Evolution*, 2026, [https://doi.org/10.1093/molbev/msag136](https://doi.org/10.1093/molbev/msag136)
 
 Kwondo Kim, **Aaron Pfennig** (author 2 out of 12), …, and Charles Lee, A Denisovan-derived Alu insertion in OCA2 contributes to pigmentation diversity in present-day Melanesian, 2026, _bioRxiv_, [https://doi.org/10.64898/2026.03.18.712481](https://doi.org/10.64898/2026.03.18.712481)
 
