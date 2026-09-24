@@ -3,12 +3,13 @@ layout: page
 title: Research
 ---
 
-Structural variants (SVs), such as deletions, duplications, insertions, and inversions of 50 base pairs or more, affect more of the genome than single-nucleotide variants and often have larger functional and evolutionary consequences. Long-read sequencing and de novo assembly now make SVs visible, but population genetics still lacks the models and tools to analyze them. My research builds these foundations, from reconstructing accurate haplotypes, to modeling SV evolution, to analyzing variation directly on pangenome graphs. I apply these methods to a question that has run through all of my work: how archaic introgression and admixture shaped present-day human genetic variation and disease risk.
+Structural variants (SVs), such as deletions, duplications, insertions, and inversions of 50 base pairs or more, affect more of the genome than single-nucleotide variants and often have larger functional and evolutionary consequences. Long-read sequencing and de novo assembly now make SVs visible, but population genetics still lacks the models and tools to analyze them. My research builds these foundations, from reconstructing accurate haplotypes, to modeling SV evolution, to analyzing variation directly on pangenome graphs. Because populations evolve in space, I also develop spatially explicit models and machine-learning methods that infer population history across space and time. I apply these methods to a question that has run through all of my work: how archaic introgression and admixture shaped present-day human genetic variation and disease risk.
 
 My research is organized around three themes:
 1. [Haplotype reconstruction from long reads](#haplotype-reconstruction-from-long-reads)
 2. [Population genetics of structural variation and pangenomes](#population-genetics-of-structural-variation-and-pangenomes)
-3. [Archaic introgression and admixture](#archaic-introgression-and-admixture)
+3. [Spatially explicit models of population history](#spatially-explicit-models-of-population-history)
+4. [Archaic introgression and admixture](#archaic-introgression-and-admixture)
 
 ## Haplotype reconstruction from long reads
 
@@ -49,6 +50,12 @@ I apply these approaches to SVs that shaped human diversity. With collaborators,
 Relevant work:
 
 * Kwondo Kim, **Aaron Pfennig** (author 2 out of 12), …, and Charles Lee, A Denisovan-derived Alu insertion in OCA2 contributes to pigmentation diversity in present-day Melanesian, 2026, _bioRxiv_, [https://doi.org/10.64898/2026.03.18.712481](https://doi.org/10.64898/2026.03.18.712481)
+
+## Spatially explicit models of population history
+
+Most population-genetic inference treats populations as randomly mating units without geography. Yet humans and other species evolve in continuous space, shaped by limited dispersal, range expansions, barriers to gene flow, and admixture where populations meet. Ignoring space can bias estimates of demography and selection, and it obscures where and when populations came into contact.
+
+I am developing spatially explicit population-genetic models and simulation-based inference methods that recover population history across both space and time. Ancestral recombination graphs (ARGs), which encode the genealogical history of a sample along the genome, provide a rich input for this: I am building graph convolutional networks that learn directly from ARGs to infer spatiotemporal processes such as dispersal, migration, and the timing and location of admixture.
 
 ## Archaic introgression and admixture
 
