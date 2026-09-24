@@ -3,11 +3,22 @@ layout: page
 title: Research
 ---
 
-My research focuses on understanding the evolutionary dynamics and implications of admixture and introgression, that is, the mixing of populations that have been separated for relatively short and long evolutionary time, respectively. Given their central role in human evolution, I am interested in how they have shaped present-day genetic variation and disease risk, with a focus on structural variation. To do so, I am integrating population genetics and comparative genomics with bioinformatics tool development. My current research areas include:
+Structural variants (SVs), such as deletions, duplications, insertions, and inversions of 50 base pairs or more, affect more of the genome than single-nucleotide variants and often have larger functional and evolutionary consequences. Long-read sequencing and de novo assembly now make SVs visible, but population genetics still lacks the models and tools to analyze them. My research builds these foundations, from reconstructing accurate haplotypes, to modeling SV evolution, to analyzing variation directly on pangenome graphs. I apply these methods to a question that has run through all of my work: how archaic introgression and admixture shaped present-day human genetic variation and disease risk.
 
-### Leveraging Methylation Information in Long-Read Sequencing Data To Improve Variant Phasing
+My research is organized around three themes:
+1. [Haplotype reconstruction from long reads](#haplotype-reconstruction-from-long-reads)
+2. [Population genetics of structural variation and pangenomes](#population-genetics-of-structural-variation-and-pangenomes)
+3. [Archaic introgression and admixture](#archaic-introgression-and-admixture)
 
-Accurate phasing of genetic and epigenetic variation is crucial for many downstream analyses, including association testing, clinical variant interpretation, and population history inference. Although long-read sequencing significantly improves the continuity and completeness of genome sequencing, reconstructing chromosome-scale haplotypes still often requires combining multiple technologies, such as PacBio HiFi and Oxford Nanopore Technologies (ONT) sequencing. While these sequencing platforms detect the epigenetic modification 5-methylcytosine (5mC), current read-based phasing and *de novo* genome assembly algorithms do not incorporate this information. To assess whether methylation information can improve long-range phasing, I developed LongHap, a read-based phasing method that seamlessly integrates sequence and methylation data. LongHap outperforms existing tools by achieving lower error rates and greater phase block contiguity (Figure 1).
+## Haplotype reconstruction from long reads
+
+Accurate phasing of genetic variation is essential for association testing, clinical variant interpretation, and population history inference. Long reads greatly improve phasing continuity, but reconstructing chromosome-scale haplotypes, especially across INDELs and SVs, still often requires combining multiple sequencing technologies.
+
+I developed LongHap, a read-based phasing method that jointly phases SNVs, INDELs, and SVs using loopy belief propagation, and can additionally integrate the 5-methylcytosine (5mC) signal that PacBio HiFi and Oxford Nanopore reads already carry. Across HiFi, ONT, and ultra-long ONT data, LongHap phases more INDELs and SVs than existing tools while maintaining lower error rates, extends phase blocks when methylation is included, and runs roughly 30× faster than methylation-aware alternatives. It also performs well on challenging, medically relevant genes and across genomes of diverse ancestry.
+
+## Leveraging Methylation Information in Long-Read Sequencing Data To Improve Variant Phasing
+
+Accurate phasing of genetic and epigenetic variation is crucial for many downstream analyses, including association testing, clinical variant interpretation, and population history inference. Although long-read sequencing significantly improves the continuity and completeness of genome sequencing, reconstructing chromosome-scale haplotypes still often requires combining multiple technologies, such as PacBio HiFi and Oxford Nanopore Technologies (ONT) sequencing. Moreover, INDELs and structural variants (SVs) remain difficult to phase accurately, even though they are often the most functionally consequential variants, because the alleles that reads carry at these sites are frequently ambiguous or error-prone. To address this, I developed [LongHap](https://github.com/AkeyLab/LongHap), a read-based phasing method that uses loopy belief propagation to jointly phase SNVs, INDELs, and SVs. LongHap phases more INDELs and SVs than existing read-based tools while maintaining lower error rates, including in challenging, medically relevant genes and across genomes of diverse ancestry (Figure 1). Because PacBio HiFi and ONT reads also detect the epigenetic modification 5-methylcytosine (5mC), LongHap can additionally integrate allele-specific methylation to connect variants in regions with few heterozygous sites, reducing switch error rates and increasing phase block contiguity at roughly 30-fold lower runtime than existing methylation-aware phasing workflows (Figure 1).
 
 {% include image.html file='/assets/img/benchmark_hifi.png' align='right' margin-left='15px' margin-right='0px' max-width='450px' alt='Figure 1' caption='<strong>Figure 1</strong>. LongHap optimizes the trade-off between minimizing the switch error rate and maximizing the fraction of phased variants. A) Switch error rates for different read-based variant phasing tools using 38x PacBio Revio HiFi data for HG002. LongHap makes 164 fewer errors when considering methylation information (4,860 vs. 5,024). B) LongHap phases more variants than LongPhase, while maintaining a lower error rate than all other tools. C) LongHap’s integration of methylation information significantly increases the phase block N50 (mean N50: 584 kb compared to 443 kb). D) Similar to (B) LongHap phases more INDELs and SVs than LongPhase, while maintaining a lower error rate than all other tools. Source: <a href="https://doi.org/10.64898/2026.03.11.710820" target="_blank">Pfennig and Akey, <i>bioRxiv</i>, 2026</a>' %}
 
@@ -15,44 +26,49 @@ To extend these performance gains to phased *de novo* genome assemblies, I am no
 
 Relevant work:
 
-* **Aaron Pfennig** and Joshua M. Akey, Methylation-aware long-read phasing significantly improves genome-wide haplotype reconstruction, _bioRxiv_, [https://doi.org/10.64898/2026.03.11.710820](https://doi.org/10.64898/2026.03.11.710820)
+* **Aaron Pfennig** and Joshua M. Akey, Harnessing methylation signals inherent in long-read sequencing data for improved variant phasing, _bioRxiv_, [https://doi.org/10.64898/2026.03.11.710820](https://doi.org/10.64898/2026.03.11.710820)
 
-### Developing a tool suite for population and statistical genetics analyses on pangenomes
+## Population genetics of structural variation and pangenomes
+
+### Models for structural variant evolution
+
+SVs arise through mutational mechanisms, such as non-allelic homologous recombination, that violate basic assumptions of population genetics, including constant mutation rates. As a result, we lack the foundational models needed to make evolutionary and clinical inferences about them. I am developing theoretical frameworks that model these mechanisms directly. For example, copy number variants can be modeled as chromosomes switching between copy-number states, where two chromosomes can only coalesce when they share the same state. These models make it possible to build realistic simulations and to train inference methods, including machine-learning approaches, for questions about SV selection and history.
+
+### Population genetics on pangenome graphs
 
 Pangenomes are a set of multiple whole-genome sequences typically represented as a graph (Figure 2). Unlike a single reference genome, pangenomes capture the full spectrum of genetic variation by being able to represent multiple mutations at the same position and accommodate substantial amounts of non-reference sequence. 
 
 {% include image.html file="/assets/img/pangenomes.png" align="left" margin-left="0px" margin-right="15px" max-width="400px" alt="Figure 2" caption="<strong>Figure 2</strong>. An illustration of a pangenome graph. Nodes represent unique DNA sequences, and each haplotype is defined by a path through the graph. Variants and repeats are represented as bubbles in the graph (e.g., Haplotype 1)." %} These capabilities are particularly critical for studying biomedically important highly diverse and structurally complex “genomic black holes” that are now accurately reconstructed in de novo genome assemblies. 
 
-However, due to an absence of analytical tools to analyze pangenomes, current approaches map genetic variation in pangenomes back to the coordinate system of a single reference genome and analyze it with conventional methods, which largely defeats the advantages of de novo assembly. Thus, the absence of analytical tools for pangenomes prevents us from taking advantage of the full spectrum of genetic variation (in particular, structurally complex variation) in population and statistical genetics analyses. 
+Yet, most analyses still project pangenome variation back onto a single linear reference, discarding much of what assembly gained. I am developing graph-native methods for standard population and statistical genetics analyses, such as inferring population structure and shared ancestry, so that the full spectrum of variation, including complex SVs, can be used directly.
 
-To address this, I am currently developing a tool suite to support standard population and statistical genetics analyses (e.g., elucidating population structure, association testing, etc.) on pangenomes.
+### Structural variation in human evolution 
 
-### New population genetics frameworks for analyzing structural variation
-
-A major gap in human genetics is our inability to study structural variants (SVs), such as deletions and duplications ≥50 base pairs, that can disrupt protein-coding genes and regulatory elements, as they are invisible to short-read sequencing. This gap limits our understanding of disease and genome evolution. Long-read sequencing now enables the discovery of SVs through de novo assembly. However, SVs arise through complex mutational processes that defy basic population genetics assumptions, such as constant mutation rates, and we therefore lack foundational models to analyze this important variant class.
-
-I am developing theoretical and analytical frameworks to make direct inferences about SVs by modeling their unique mutational mechanisms. For example, copy number variants can be modeled as chromosomes switching between “states” by gaining or losing copies. Two chromosomes can only share a common ancestor when they are in the same state (copy number). Such models inform realistic simulations to train machine learning models for making evolutionary and clinical inferences about SVs. By developing novel methods for assembling high-quality phased genomes and analyzing SVs, my research will delineate the functional impact of SVs.
+I apply these approaches to SVs that shaped human diversity. With collaborators, I helped show that a Denisovan-derived Alu insertion in OCA2 contributes to pigmentation variation in present-day Melanesians.
 
 Relevant work:
 
 * Kwondo Kim, **Aaron Pfennig** (author 2 out of 12), …, and Charles Lee, A Denisovan-derived Alu insertion in OCA2 contributes to pigmentation diversity in present-day Melanesian, 2026, _bioRxiv_, [https://doi.org/10.64898/2026.03.18.712481](https://doi.org/10.64898/2026.03.18.712481)
 
-### Theoretical and empirical population genetics of admixture and introgression
+## Archaic introgression and admixture
 
-Admixture and introgression play a central role in human evolution. Therefore, it is critical to understand how these processes have shaped the distribution of present-day genetic variation and what its implications are. I introduced a novel population genetics model that accounts for a heterogeneous genetic background in hybrid genomes, showing that fitness effects arising from a heterogeneous background modify the dynamics of focal alleles during introgression. The model predicts that most introgressed alleles must survive an initial filter, suggesting Neanderthal-introgressed variants in extant human genomes cannot be that harmful. 
+Admixture and introgression have played a central role in human evolution. I study how they shaped present-day genetic variation, using both theory and large-scale data.
+
+**Fitness of introgressed variation.** I developed a population-genetic model showing that fitness effects arising from a heterogeneous hybrid background change the dynamics of focal alleles during introgression. The model predicts that most introgressed alleles must survive an initial filter, implying that Neanderthal variants remaining in human genomes are unlikely to be strongly deleterious.
 
 {% include image.html file="/assets/img/neanderthal.jpg" align="right" margin-left="15px" margin-right="0px" max-width="400px" alt="Figure 3" caption='<strong>Figure 3</strong>. Secondary contact has brought Neanderthal DNA into novel genomic contexts. (1) Neanderthal DNA introgressed into non-African populations ~50 kya, leading to an initial purging of Neanderthal ancestry. (2) During the past 15 generations, recent admixture of individuals with African-like ancestry and European-like ancestry has introduced Neanderthal variants into a novel genetic background, potentially leading to secondary selection. Source: <a href="https://doi.org/10.1093/molbev/msag136" target="_blank">Pfennig and Lachance, <i>Molecular Biology and Evolution</i>, 2026</a>' %}
 
-I empirically tested this hypothesis using 30,780 predominantly African- and European-like admixed genomes from the United States. In such genomes, the fitness of Neanderthal introgressed variants was re-evaluated as most Neanderthal introgressed sequence was contributed by European-like ancestors and brought onto a “novel” African-like genetic background (Figure 3). In concordance with predictions of my theoretical model, I found that remaining Neanderthal ancestry in contemporary genomes is likely evolutionary neutral as the admixed genomes contained approximately as much Neanderthal introgressed sequence as expected, suggesting widespread recent polygenic selection did not occur. 
+I tested this prediction in 30,780 recently admixed genomes from the United States, where Neanderthal sequence contributed mostly by European-like ancestors was placed on a largely African-like background (Figure 3). Admixed genomes carried about as much Neanderthal sequence as expected, indicating that the remaining Neanderthal ancestry is likely evolutionarily neutral and that widespread recent polygenic selection against it did not occur.
 
-Furthermore, in related work, I proposed methods for including uncertainty in the interpretation of sex-biased admixture in the Americas in the context of the transatlantic slave trade. I collaborated on studies elucidating the genetic basis of prostate cancer and male pattern baldness in African men.
+**Sex-biased introgression and admixture.** Contrasting ancestry on the X chromosome and autosomes can reveal whether males and females contributed unequally to admixed populations. I showed how uncertainty affects these estimates in the context of admixture in the Americas, and I am now using simulation-based inference (Approximate Bayesian Computation) to jointly estimate sex-biased contributions and selection during Neanderthal introgression.
+
+**Collaborative work** includes studies of evolutionary genetics in African populations and the genetic architecture of prostate cancer and androgenetic alopecia in men of African ancestry.
 
 Relevant work:
 
 †These authors are co-corresponding authors
 
 * **Aaron Pfennig**† and Joesph Lachance†, Limited selection on Neanderthal DNA in 30,780 recently admixed genomes with African-like ancestry, _Molecular Biology and Evolution_, 2026, [https://doi.org/10.1093/molbev/msag136](https://doi.org/10.1093/molbev/msag136)
-* Kwondo Kim, **Aaron Pfennig** (author 2 out of 12), …, and Charles Lee, A Denisovan-derived Alu insertion in OCA2 contributes to pigmentation diversity in present-day Melanesian, 2026, _bioRxiv_, [https://doi.org/10.64898/2026.03.18.712481](https://doi.org/10.64898/2026.03.18.712481)
 * **Aaron Pfennig** and Joseph Lachance, Hybrid fitness effects modify fixation probabilities of introgressed alleles, _G3 Genes\|Genomes\|Genetics_, 2022, [https://doi.org/10.1093/g3journal/jkac113](https://doi.org/10.1093/g3journal/jkac113)
 * **Aaron Pfennig** and Joseph Lachance, Challenges of accurately estimating sex-biased admixture from X chromosomal and autosomal ancestry proportions, _The American Journal of Human Genetics_, 2023, [https://doi.org/10.1016/j.ajhg.2022.12.012](https://doi.org/10.1016/J.AJHG.2022.12.012)
 * **Aaron Pfennig**, Lindsay N Petersen, Paidamoyo Kachambwa, Joseph Lachance, Evolutionary genetics and admixture in African populations, _Genome Biology and Evolution_, 2023, [https://doi.org/10.1093/gbe/evad054](https://doi.org/10.1093/gbe/evad054)
