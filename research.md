@@ -27,7 +27,7 @@ To extend these performance gains to phased *de novo* genome assemblies, I am no
 
 Relevant work:
 
-* **Aaron Pfennig** and Joshua M. Akey, Harnessing methylation signals inherent in long-read sequencing data for improved variant phasing, _bioRxiv_, [https://doi.org/10.64898/2026.03.11.710820](https://doi.org/10.64898/2026.03.11.710820)
+* **Aaron Pfennig** and Joshua M. Akey, Methylation-aware long-read phasing significantly improves genome-wide haplotype reconstruction, _bioRxiv_, [https://doi.org/10.64898/2026.03.11.710820](https://doi.org/10.64898/2026.03.11.710820)
 
 ## Population genetics of structural variation and pangenomes
 
