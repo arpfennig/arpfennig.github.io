@@ -10,7 +10,7 @@ title: Software
 - Works with HiFi and ONT data
 - Roughly 30× faster than MethPhaser
 
-{% include image.html file="/assets/img/longhap.png" align="none" margin-left="5px" margin-right="5px" max-width="800px" alt="LongHap" caption="" credit="Pfennig & Akey, <i>bioRxiv</i>, 2026%}
+{% include image.html file="/assets/img/longhap.png" align="none" margin-left="5px" margin-right="5px" max-width="800px" alt="LongHap" caption="" credit="Pfennig & Akey, <i>bioRxiv</i>, 2026" %}
 
 [MgCod](https://github.com/gatech-genemark/Mgcod): Gene prediction for prokaryotic and phage genomes with stop codon reassignment. MgCod detects which genetic code a genome, or a segment of it, uses and applies the correct model automatically, including in crAssphage genomes that use multiple genetic codes.
 
